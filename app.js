@@ -6,7 +6,7 @@ const errorHandler = require("./middleware/errorHandler.js");
 //Configuracion Middleware con el Servidor de Autorización
 const autenticacion = auth({
     audience: "http://localhost:3000/api/productos",
-    issuerBaseURL: "http://dev-utn-frc-iaew.auth0.com/",
+    issuerBaseURL: "https://dev-utn-frc-iaew.auth0.com/",
     tokenSigningAlg: "RS256",
 });
 
